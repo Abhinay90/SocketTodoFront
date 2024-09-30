@@ -17,7 +17,7 @@ export const SocketProvider=({children})=>{
                     navigate("/login");
                 }
            
-               let socket =io("http://localhost:5600", {
+               let socket =io("https://sockettodoback.onrender.com", {
                    auth: {
                        token: token, // Pass token in the auth field
                    }

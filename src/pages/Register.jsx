@@ -32,7 +32,7 @@ import axios from "axios";
                    return;
               }
               try{
-                  const response=await axios.post("http://localhost:5600/user/register",{name,email,password,confirmPassword});
+                  const response=await axios.post("https://sockettodoback.onrender.com/user/register",{name,email,password,confirmPassword});
                     console.log(response)   
                   if(response.status===201){
                              navigate("/login");

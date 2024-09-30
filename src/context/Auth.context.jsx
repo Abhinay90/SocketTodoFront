@@ -13,7 +13,7 @@ export const AuthProvider=({children})=>{
               if(!token) 
                    return 
                 try{
-              const response=await axios.get("http://localhost:5600/user/profile",{
+              const response=await axios.get("https://sockettodoback.onrender.com/user/profile",{
                 headers: {
                     'Authorization': `Bearer ${token}`, // Add Bearer token here
                     'Content-Type': 'application/json' // Optional, if you're sending JSON
